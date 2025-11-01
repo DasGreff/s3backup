@@ -2,6 +2,8 @@ name: Docker Image CI
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '45 22 * * 3'
 #  push:
 #    branches: [ "master" ]
 #  pull_request:
